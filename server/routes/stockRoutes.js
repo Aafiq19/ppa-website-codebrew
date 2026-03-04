@@ -1,10 +1,5 @@
 import express from "express";
-import {
-  getStock,
-  updateStock,
-  getLowStock,
-} from "../controllers/stockController.js";
-
+import { getStock, updateStock, getLowStock } from "../controllers/stockController.js";
 import { protect } from "../middleware/authMiddleware.js";
 import { isAdmin } from "../middleware/roleMiddleware.js";
 

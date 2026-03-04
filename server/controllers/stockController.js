@@ -9,7 +9,6 @@ export const getStock = async (req, res) => {
 /* UPDATE STOCK */
 export const updateStock = async (req, res) => {
   const { quantity } = req.body;
-
   const product = await Product.findById(req.params.id);
 
   if (!product)
